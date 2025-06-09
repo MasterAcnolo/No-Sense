@@ -10,7 +10,8 @@
 }
 
 body {
-  background-color: #111111;
+  /* background-color: #111111; */
+  background: url("../assets/images/Background1.png");
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr);
@@ -46,7 +47,7 @@ body {
 .text-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   text-align: left;
   gap: 2rem;
 }
@@ -56,6 +57,7 @@ body {
   font-weight: bold;
   color: white;
   margin: 0;
+  
 }
 
 .quotes {
@@ -102,7 +104,7 @@ body {
 .spotify-embed {
   grid-area: 5 / 3 / 6 / 6;
   width: 100%;
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,7 +114,7 @@ body {
 }
 
 .spotify-embed iframe {
-  width: 100%;
+  width: 80%;
   height: 100%;
   border: none;
   border-radius: 10px;

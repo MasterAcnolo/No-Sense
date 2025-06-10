@@ -69,6 +69,11 @@ const profilePictures = [
     title: 'Team Pandi',
     description: 'Something we lost',
   },
+  {
+    src: 'assets/images/profilepicture17.jpg',
+    title: 'Tri Poloski',
+    description: 'Хард басс тусовки, адидас кроссовки',
+  },
 ];
 
 const gallery = document.getElementById('gallery');

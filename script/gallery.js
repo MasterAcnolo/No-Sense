@@ -69,7 +69,6 @@ const profilePictures = [
     title: 'Team Pandi',
     description: 'Something we lost',
   },
-  
 ];
 
 const gallery = document.getElementById('gallery');
@@ -79,6 +78,7 @@ profilePictures.forEach(({ src, title, description }) => {
   card.className = 'profile-card';
 
   card.innerHTML = `
+    <div class="skeleton"></div>
     <img src="${src}" alt="${title}" class="profile-image" />
     <div class="profile-hover-info">
       <h3>${title}</h3>
@@ -87,4 +87,10 @@ profilePictures.forEach(({ src, title, description }) => {
   `;
 
   gallery.appendChild(card);
+
+  const img = card.querySelector('.profile-image');
+  img.addEventListener('load', () => {
+    card.querySelector('.skeleton').remove();
+    img.classList.add('loaded');
+  });
 });

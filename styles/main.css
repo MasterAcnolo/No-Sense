@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #111;
+  background-image: url("../assets/images/Background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+  color: white;
+  padding: 2rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+.back-link:hover {
+  color: #fff;
+}
+

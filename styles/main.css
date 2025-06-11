@@ -2,13 +2,14 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #111;
-  background-image: url("../assets/images/Background1.png");
+  background-image: url("../assets/images/Background1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed; 
   color: white;
   padding: 2rem;
+  user-select: none;
 }
 
 .back-link {

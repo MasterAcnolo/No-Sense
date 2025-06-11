@@ -20,6 +20,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: 'Inter', sans-serif;
+  user-select: none;
 }
 
 .container {
@@ -132,7 +133,7 @@ body {
 }
 
 /* ---------- Responsive Design ---------- */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
 
   body {
     grid-template-columns: 1fr;

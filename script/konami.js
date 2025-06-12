@@ -9,7 +9,7 @@ window.addEventListener('keydown', function(e) {
   if (e.key === konamiCode[konamiIndex]) {
     konamiIndex++;
     if (konamiIndex === konamiCode.length) {
-      window.location.href = "https://www.youtube-nocookie.com/v/dQw4w9WgXcQ?autoplay=1";
+      window.location.href = "https://youtu.be/dQw4w9WgXcQ";
       konamiIndex = 0;
     }
   } else {

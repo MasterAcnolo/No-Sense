@@ -28,7 +28,7 @@ header {
   color: #ccc;
   border-radius: 6px;
   text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .back-link:hover {
@@ -41,12 +41,14 @@ header {
   width: 16px;
   height: 16px;
   filter: invert(80%);
-  transition: filter 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .back-link:hover .icon-left {
   filter: invert(100%);
 }
+
+
 
 .gallery-container {
   display: grid;

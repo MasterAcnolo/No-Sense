@@ -18,7 +18,10 @@
 <!-- (pour usage interne) -->
 
 <!-- Bouton Retour -->
-<a href="../index.html" class="back-btn">← Retour</a>
+<a href="../index.html" class="back-link">
+      <img src="../assets/icons/arrow-left-solid.svg" alt="Retour" class="icon-left">
+      <span>Retour</span>
+</a>
 
 <style>
     body {
@@ -36,15 +39,36 @@
 }
 
 .back-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em 1.2em;
+  font-size: 0.95rem;
+  background-color: transparent;
+  border: 1px solid #666;
   color: #ccc;
+  border-radius: 6px;
   text-decoration: none;
-  margin-bottom: 1rem;
-  transition: color 0.2s ease;
+  transition: 0.2s ease;
 }
+
 .back-link:hover {
+  background-color: #222;
   color: #fff;
+  border-color: #aaa;
 }
+
+.back-link .icon-left {
+  width: 16px;
+  height: 16px;
+  filter: invert(80%);
+  transition: 0.2s ease;
+}
+
+.back-link:hover .icon-left {
+  filter: invert(100%);
+}
+
 
 
 </style>

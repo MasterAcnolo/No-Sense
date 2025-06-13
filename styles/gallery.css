@@ -1,3 +1,5 @@
+@import url(components/animations.css);
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -96,15 +98,6 @@ header {
   animation: shimmer 1.2s infinite;
   border-radius: 12px;
   z-index: 1;
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: -200% 0;
-  }
-  100% {
-    background-position: 200% 0;
-  }
 }
 
 .profile-hover-info {

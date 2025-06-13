@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr"> <!-- FR si ton site est majoritairement en français -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MasterAcnolo</title>
-  <link rel="stylesheet" href="styles/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio spatial WTF de Saint Roi Inspecteur Gadget du Schweppes" />
+  
+  <!-- Icons -->
   <link rel="icon" href="/assets/icons/code-solid.svg" type="image/svg+xml">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
 
@@ -16,54 +23,58 @@
         <p class="MasterAcnolo">MasterAcnolo</p>
         <p class="quotes">“Remember the goal”</p>
       </div>
-      <a href="pages/gallery.html">
-        <img src="assets/images/pfp/profilepicture.webp" alt="Profile picture" class="profile-pic">
+      <a href="pages/gallery.html" title="Voir la galerie">
+        <img src="assets/images/pfp/profilepicture.webp" alt="Portrait de profil" class="profile-pic">
       </a>
     </div>
 
     <div class="social-icons">
-        <a href="https://www.reddit.com/user/MasterAcnol0/" target="_blank">
-            <img src="assets/icons/reddit-alien-brands.svg" alt="Reddit">
-        </a>
-        <a href="https://github.com/MasterAcnolo" target="_blank">
-            <img src="assets/icons/github-brands.svg" alt="GitHub">
-        </a>
-        <a href="https://www.instagram.com/masteracnolo_off/" target="_blank">
-            <img src="assets/icons/instagram-brands.svg" alt="Instagram">
-        </a>
-        <a href="https://open.spotify.com/user/0ylma3sww8uty7mxry46e229m?si=54ca2ef6495b4a46" target="_blank">
-            <img src="assets/icons/spotify-brands.svg" alt="Spotify">
-        </a>
-        <a href="https://steamcommunity.com/id/MasterAcnolo/" target="_blank">
-            <img src="assets/icons/steam-brands.svg" alt="Steam">
-        </a>
-        <a href="https://www.youtube.com/channel/UCS55e2-ZslXqGzznB_7N4Sg" target="_blank">
-            <img src="assets/icons/youtube-brands.svg" alt="YouTube">
-        </a>
-        <a href="https://www.twitch.tv/mast3racnol0" target="_blank">
-            <img src="assets/icons/twitch-brands.svg" alt="Twitch">
-        </a>
+      <a href="https://www.reddit.com/user/MasterAcnol0/" target="_blank" rel="noopener noreferrer" title="Reddit">
+        <img src="assets/icons/reddit-alien-brands.svg" alt="Reddit">
+      </a>
+      <a href="https://github.com/MasterAcnolo" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <img src="assets/icons/github-brands.svg" alt="GitHub">
+      </a>
+      <a href="https://www.instagram.com/masteracnolo_off/" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <img src="assets/icons/instagram-brands.svg" alt="Instagram">
+      </a>
+      <a href="https://open.spotify.com/user/0ylma3sww8uty7mxry46e229m?si=54ca2ef6495b4a46" target="_blank" rel="noopener noreferrer" title="Spotify">
+        <img src="assets/icons/spotify-brands.svg" alt="Spotify">
+      </a>
+      <a href="https://steamcommunity.com/id/MasterAcnolo/" target="_blank" rel="noopener noreferrer" title="Steam">
+        <img src="assets/icons/steam-brands.svg" alt="Steam">
+      </a>
+      <a href="https://www.youtube.com/channel/UCS55e2-ZslXqGzznB_7N4Sg" target="_blank" rel="noopener noreferrer" title="YouTube">
+        <img src="assets/icons/youtube-brands.svg" alt="YouTube">
+      </a>
+      <a href="https://www.twitch.tv/mast3racnol0" target="_blank" rel="noopener noreferrer" title="Twitch">
+        <img src="assets/icons/twitch-brands.svg" alt="Twitch">
+      </a>
     </div>
   </div>
 
   <div class="spotify-embed">
     <iframe
       src="https://open.spotify.com/embed/track/2fIBmScNzkGmSJ3y2XsmEI?theme=white&view=coverart"
+      width="100%"
+      height="152"
+      frameborder="0"
       allow="encrypted-media"
-      loading="lazy">
+      loading="lazy"
+      title="Spotify Embed – Yamaski Miyagi & Andy Panda">
     </iframe>
   </div>
 
   <div class="discover-float">
-  <a href="pages/projects.html" class="discover-link">
-    <span>Discover</span>
-    <svg class="discover-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-    </svg>
-  </a>
-</div>
+    <a href="pages/projects.html" class="discover-link" title="Découvrir mes projets">
+      <span>Discover</span>
+      <svg class="discover-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
+  </div>
 
-
-  <script src="script/konami.js"></script>
+  <!-- Script -->
+  <script src="script/eastereggs/konami.js"></script>
 </body>
 </html>

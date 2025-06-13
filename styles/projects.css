@@ -16,6 +16,17 @@ body {
   text-align: center;
 }
 
+a.button {
+  text-decoration: none;
+}
+
+a.button.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -47,8 +58,6 @@ body {
   filter: invert(100%);
 }
 
-/* ========Première Card===========*/
-
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -76,29 +85,26 @@ body {
   gap: 7.5px;
   transition: 0.5s ease;
   color: white;
+  
 }
-
-
 
 .card::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0); /* Invisible par défaut */
+  background-color: rgba(0, 0, 0, 0); 
   transition: background-color 0.3s ease;
   z-index: 1;
 }
 
 .card:hover::before {
-  background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent au hover */
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .card::after {
   content: "";
   position: absolute;
   inset: 0;
-  /* background: url("../assets/projectpictures/missing.jpg"); */
-
   opacity: 0.5;
   transition: 0.3s ease;
 }
@@ -135,7 +141,6 @@ body {
   transition: all 0.5s ease;
 }
 
-
 .button {
   background-color: rgb(165, 165, 165); 
   color: #111; 
@@ -144,28 +149,32 @@ body {
   border-radius: 2.5px;
 }
 
-
 .card:hover .details {
   transform: translateY(0%);
   transition-delay: 0.5s;
 }
+
 .card:hover .cardHeader::after {
   transform: translateX(-1rem);
   transition: 0.5s ease;
   opacity: 1;
 }
+
 .card:hover {
   transform: scale(1.1);
   border-radius: 15px;
 }
 
-/* BACKGROUND DE CARD PERSO*/
+
+/* ========================
+   Backgrounds for cards
+=========================== */
+
 
 #bayrod{
   background: url("../assets/projectpictures/bayrodlogo2.webp");
   background-size: cover;
   background-position: center center;
-  
 }
 
 #ytnc{
@@ -184,37 +193,28 @@ body {
   background: url("../assets/projectpictures/clock.webp");
   background-size: cover;
   background-position: center center;
-
 }
 
 #SolarSystem{
   background: url("../assets/projectpictures/solarsystem.webp");
   background-size: cover;
   background-position: center center;
-
 }
 
 #WeatherSite{
   background: url("../assets/projectpictures/Weather.webp");
   background-size: cover;
   background-position: center center;
-
 }
 
 #PasswordGenerator{
   background: url("../assets/projectpictures/password.webp");
   background-size: cover;
   background-position: center center;
-
 }
 
 #Quotes{
   background: url("../assets/projectpictures/quotes.webp");
   background-size: cover;
   background-position: center center;
-
 }
-
-
-/* ===================== */
-

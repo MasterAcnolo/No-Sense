@@ -1,0 +1,30 @@
+#loader {
+  position: fixed;
+  inset: 0;
+  background-color: #0a0a0a;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1s ease-out forwards;
+  animation-delay: 2.5s;
+  pointer-events: none;
+}
+
+.loader-spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #fff;
+  border-top: 6px solid #ff2fd5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader-text {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #ccc;
+  font-style: italic;
+  animation: fadeIn 1.2s ease-out;
+}

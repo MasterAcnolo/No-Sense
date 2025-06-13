@@ -36,7 +36,7 @@ body {
   gap: 2rem;
   margin-bottom: 2rem;
   animation: fadeInUp 1s ease-out forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.8s;
   animation-fill-mode: both;
 }
 
@@ -82,7 +82,7 @@ body {
   gap: 1.5rem;
   margin-top: 2rem;
   animation: fadeInUp 1s ease-out forwards;
-  animation-delay: 0.6s;
+  animation-delay: 1s;
   animation-fill-mode: both;
   flex-wrap: wrap;
 }
@@ -112,7 +112,7 @@ body {
   right: 2rem;
   z-index: 20;
   animation: fadeInUp 1s ease-out forwards;
-  animation-delay: 1s;
+  animation-delay: 1.4s;
   animation-fill-mode: both;
 }
 

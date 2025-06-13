@@ -9,6 +9,9 @@
   }
 }
 
+/* * {
+  outline: 1px solid red; 
+} */
 
 body {
   background: url("../assets/images/Background1.webp");
@@ -231,6 +234,12 @@ body {
     display: block;
   }
 
+  .discover-float {
+  position: static;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
 
 }
 

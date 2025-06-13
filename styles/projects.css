@@ -12,6 +12,10 @@ body {
   user-select: none;
 }
 
+.header h1{
+  text-align: center;
+}
+
 .back-link {
   display: inline-flex;
   align-items: center;
@@ -61,8 +65,8 @@ body {
 .card {
   background: rgba(70, 70, 70, 0.5);
   position: relative;
-  max-width: 250px;
-  height: 350px;
+  width: 250px;
+  min-height: 350px;
   border-radius: 5px;
   padding: 1rem;
   overflow: hidden;
@@ -74,13 +78,27 @@ body {
   color: white;
 }
 
+
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0); /* Invisible par défaut */
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.card:hover::before {
+  background-color: rgba(0, 0, 0, 0.5); /* Fond noir transparent au hover */
+}
+
 .card::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../assets/projectpictures/bayrodlogo.jpg");
-  background-size: cover;
-  background-position: center center;
+  /* background: url("../assets/projectpictures/missing.jpg"); */
+
   opacity: 0.5;
   transition: 0.3s ease;
 }
@@ -117,6 +135,7 @@ body {
   transition: all 0.5s ease;
 }
 
+
 .button {
   background-color: aqua;
   color: black;
@@ -136,4 +155,53 @@ body {
 .card:hover {
   transform: scale(1.1);
   border-radius: 15px;
+}
+
+/* BACKGROUND DE CARD PERSO*/
+
+#bayrod{
+  background: url("../assets/projectpictures/bayrodlogo2.webp");
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+#ytnc{
+  background: url("../assets/projectpictures/youtube.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+#BugattiChiron{
+  background: url("../assets/projectpictures/BugattiChiron.webp");
+  background-size: cover;
+  background-position: center center;
+}
+
+#Clock{
+  background: url("../assets/projectpictures/clock.webp");
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#SolarSystem{
+  background: url("../assets/projectpictures/solarsystem.webp");
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#WeatherSite{
+  background: url("../assets/projectpictures/Weather.webp");
+  background-size: cover;
+  background-position: center center;
+
+}
+
+#PasswordGenerator{
+  background: url("../assets/projectpictures/password.webp");
+  background-size: cover;
+  background-position: center center;
+
 }

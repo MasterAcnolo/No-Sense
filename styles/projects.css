@@ -1,3 +1,5 @@
+@import url(components/button.css);
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -16,7 +18,7 @@ body {
   text-align: center;
 }
 
-a.button {
+/* a.button {
   text-decoration: none;
 }
 
@@ -24,7 +26,7 @@ a.button.disabled {
   pointer-events: none;
   opacity: 0.5;
   cursor: not-allowed;
-}
+} */
 
 
 .back-link {
@@ -139,14 +141,6 @@ a.button.disabled {
   gap: 5px;
   transform: translateY(95%);
   transition: all 0.5s ease;
-}
-
-.button {
-  background-color: rgb(165, 165, 165); 
-  color: #111; 
-  padding: 2.5px 5px;
-  width: max-content;
-  border-radius: 2.5px;
 }
 
 .card:hover .details {

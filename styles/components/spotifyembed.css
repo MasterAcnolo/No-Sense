@@ -1,5 +1,5 @@
 .spotify-embed {
-  grid-area: 5 / 3 / 6 / 6;
+  grid-area: 5 / 3 / 6 / 6; 
   width: 100%;
   height: 120px;
   display: flex;
@@ -15,4 +15,19 @@
   height: 100%;
   border: none;
   border-radius: 10px;
+}
+
+.spotify-button {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.spotify-button:hover {
+  background: rgba(255, 255, 255, 0.2);
 }

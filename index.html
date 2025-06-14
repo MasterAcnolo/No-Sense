@@ -7,16 +7,22 @@
   <meta name="description" content="Portfolio spatial WTF de Saint Roi Inspecteur Gadget du Schweppes" />
   
   <!-- Icons -->
-  <link rel="icon" href="/assets/icons/code-solid.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/code-solid.svg" type="image/svg+xml">
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/index.css">
-  <!-- <link rel="stylesheet" href="styles/components/loader.css"> -->
+  <link rel="stylesheet" href="styles/components/loader.css">
+
 </head>
-<body>
+<body class="loading">
+
+  <div class="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">Loading...</p>
+  </div>
 
   <div class="container">
     <div class="header-line">
@@ -54,7 +60,7 @@
     </div>
   </div>
 
-  <div class="spotify-embed">
+  <!-- <div class="spotify-embed">
     <iframe
       src="https://open.spotify.com/embed/track/2fIBmScNzkGmSJ3y2XsmEI?theme=white&view=coverart"
       width="100%"
@@ -64,6 +70,10 @@
       loading="lazy"
       title="Spotify Embed – Yamaski Miyagi & Andy Panda">
     </iframe>
+  </div> -->
+  
+  <div class="spotify-embed" id="spotify-placeholder">
+  <button class="spotify-button">Start Song</button>
   </div>
 
   <div class="discover-float">
@@ -75,7 +85,6 @@
     </a>
   </div>
 
-  <!-- Script -->
   <script src="script/loader.js"></script>
   <script src="script/eastereggs/konami.js"></script>
 </body>

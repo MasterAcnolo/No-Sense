@@ -1,30 +1,45 @@
-#loader {
+.loader {
   position: fixed;
-  inset: 0;
-  background-color: #0a0a0a;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
   z-index: 9999;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  animation: fadeOut 1s ease-out forwards;
-  animation-delay: 2.5s;
+  transition: opacity 0.8s ease;
+}
+
+.loader.fade-out {
+  opacity: 0;
   pointer-events: none;
 }
 
-.loader-spinner {
+.spinner {
   width: 60px;
   height: 60px;
-  border: 6px solid #fff;
-  border-top: 6px solid #ff2fd5;
+  border: 6px solid #444;
+  border-top: 6px solid #00ffcc;
   border-radius: 50%;
   animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
 }
 
 .loader-text {
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
   color: #ccc;
-  font-style: italic;
-  animation: fadeIn 1.2s ease-out;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  animation: fadeInText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeInText {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
 }

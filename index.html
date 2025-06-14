@@ -14,9 +14,15 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles/index.css">
-  <!-- <link rel="stylesheet" href="styles/components/loader.css"> -->
+  <link rel="stylesheet" href="styles/components/loader.css">
+
 </head>
-<body>
+<body class="loading">
+
+  <div class="loader">
+    <div class="spinner"></div>
+    <p class="loader-text">Chargement spatial...</p>
+  </div>
 
   <div class="container">
     <div class="header-line">
@@ -76,6 +82,17 @@
   </div>
 
   <!-- Script -->
+   <script>
+          window.addEventListener("load", () => {
+        const loader = document.querySelector(".loader");
+        loader.classList.add("fade-out");
+
+        setTimeout(() => {
+          loader.remove();
+        }, 800); // correspond à la durée de transition CSS
+      });
+  </script>
+
   <script src="script/loader.js"></script>
   <script src="script/eastereggs/konami.js"></script>
 </body>

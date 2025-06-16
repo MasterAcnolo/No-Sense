@@ -7,7 +7,6 @@
         }, 800); 
       });
 
-// Pour l'embed Spotify de l'index:
 
 document.querySelector('.spotify-button').addEventListener('click', function() {
   const container = this.parentElement;
@@ -21,6 +20,6 @@ document.querySelector('.spotify-button').addEventListener('click', function() {
   iframe.loading = "lazy";
   iframe.style.borderRadius = "10px";
 
-  container.innerHTML = '';  // supprime le bouton
-  container.appendChild(iframe);  // insère l'iframe
+  container.innerHTML = ''; 
+  container.appendChild(iframe); 
 });

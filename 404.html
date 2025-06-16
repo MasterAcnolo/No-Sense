@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>404 Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #0e0e0e;
+      color: #00ffcc;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: clamp(3rem, 10vw, 6rem);
+      position: relative;
+      animation: glitch 1s infinite;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 1rem;
+      max-width: 90%;
+    }
+    a {
+      margin-top: 1.5rem;
+      padding: 0.6em 1.2em;
+      background: #ff3366;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #cc294f;
+    }
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(2px, -2px); }
+      60% { transform: translate(-1px, 1px); }
+      80% { transform: translate(1px, -1px); }
+      100% { transform: translate(0); }
+    }
+    #typed {
+      font-size: 1rem;
+      margin-top: 1rem;
+      height: 1.5em;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #00ffcc;
+      width: 22ch;
+      animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 22ch }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>This page doesn’t exist.<br>Maybe it’s in another timeline...</p>
+  <div id="typed">> redirecting reality.exe</div>
+  <a href="/">Go Home</a>
+
+  <script>
+    console.log("%cYou found the secret console zone 🕵️‍♂️", "color:#ff3366;font-weight:bold;font-size:16px;");
+    console.log("Oh ! You are finally awake");
+  </script>
+</body>
+</html>

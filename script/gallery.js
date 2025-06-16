@@ -74,6 +74,16 @@ const profilePictures = [
     title: 'Tri Poloski',
     description: 'Хард басс тусовки, адидас кроссовки',
   },
+  {
+    src: '../assets/images/pfp/profilepicture18.webp',
+    title: 'Bellamy - The 100',
+    description: 'He is nice',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture19.webp',
+    title: 'Murphy - The 100',
+    description: 'G.O.A.T Of The 100',
+  },
 ];
 
 const gallery = document.getElementById('gallery');

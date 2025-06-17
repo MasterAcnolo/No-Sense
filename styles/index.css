@@ -53,6 +53,29 @@ body {
   font-weight: bold;
   color: white;
   margin: 0;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+.MasterAcnolo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.MasterAcnolo:hover {
+  color: #cccccc;
+  transform: scale(1.05);
+}
+
+.MasterAcnolo:hover::after {
+  width: 100%;
 }
 
 .quotes {
@@ -140,7 +163,6 @@ body {
 .discover-link:hover .discover-icon {
   transform: translateX(4px);
 }
-
 
 /* ---------- Responsive Design ---------- */
 @media (max-width: 840px) {

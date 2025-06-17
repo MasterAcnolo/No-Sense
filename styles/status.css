@@ -1,0 +1,141 @@
+@import url(components/button.css);
+@import url(components/animations.css);
+
+
+  body {
+    background-color: #111;
+    background-image: url("../assets/images/Background1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    font-family: 'Inter', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    user-select: none;
+  }
+  .card {
+    background: #2f3136;
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    animation: fadeIn 0.8s ease;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  .status-dot {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+  .activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #202225;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+  }
+  .activity-info {
+    max-width: 75%;
+  }
+  .activity-info strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+  }
+  .activity-info span {
+    display: block;
+    font-size: 0.9em;
+    color: #ccc;
+  }
+  .duration {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 5px;
+  }
+  .activity img {
+    max-width: 120px;
+    max-height: 90px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin-left: 10px;
+  }
+  .footer {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #aaa;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 1.2em;
+    font-size: 0.95rem;
+    background-color: transparent;
+    border: 1px solid #666;
+    color: #ccc;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.2s ease;
+    position: absolute; /* ou `fixed` si tu veux qu’il reste en place au scroll */
+    top: 30px;
+    left: 30px;
+    z-index: 10; /* pour s'assurer qu'il soit au-dessus des autres éléments */
+  }
+
+  .back-link:hover {
+    background-color: #222;
+    color: #fff;
+    border-color: #aaa;
+  }
+
+  .back-link .icon-left {
+    width: 16px;
+    height: 16px;
+    filter: invert(80%);
+    transition: 0.2s ease;
+  }
+
+  .back-link:hover .icon-left {
+    filter: invert(100%);
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .activity {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .activity-info {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    .activity img {
+      max-width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }

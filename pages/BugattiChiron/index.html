@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Bugatti Chiron</title>
+    <link rel="stylesheet" href="styles/styles.css">
+     <link rel="icon" type="image/png" href="assets/images/icons/Bugatti.png" />
+     <link rel="preload" as="image" href="assets/images/pictures/BugattiChironMontre.jpg">
+    <link rel="preload" as="image" href="assets/images/pictures/ChironMontagne.jpg">
+    <link rel="preload" as="image" href="assets/images/pictures/BugattiChironResized.png">
+
+</head>
+<body>
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+    
+    <header>
+
+       <button id="hamburger-btn" class="hamburger" aria-label="Ouvrir le menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+            <div class="mobile-menu-content">
+                <button id="close-btn" class="close-btn" aria-label="Fermer le menu">&times;</button>
+                <ul class="mobile-nav">
+                <li><a href="#decouvrir" data-i18n="nav_discover">Découvrir</a></li>
+                <li><a href="#apropos" data-i18n="nav_about">À Propos</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li class="languages">
+                    <button class="lang-fr">FR</button>
+                    <button class="lang-en">EN</button>
+                </li>
+                </ul>
+                <div class="mobile-socials">
+                <a href="https://github.com/MasterAcnolo" target="_blank"><img src="assets/images/icons/github-brands-solid.svg" alt="GitHub"></a>
+                <a href="https://masteracnolo.github.io/No-Sense/" target="_blank"><img src="assets/images/icons/globe-solid.svg" alt="website"></a>
+                <a href="https://www.youtube.com/channel/UCS55e2-ZslXqGzznB_7N4Sg" target="_blank"><img src="assets/images/icons/youtube-brands.svg" alt="Youtube"></a>
+                <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank"><img src="assets/images/icons/linkedin-in-brands.svg" alt="Linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <img alt="Logo Bugatti" src="assets/images/pictures/LogoBugatti.svg" id="LogoBugatti">
+
+        <div class="header-right-side">
+            <nav class="header-link"> 
+                <a href="#" data-i18n="nav_discover">Découvrir</a>
+                <a href="#" data-i18n="nav_about">A Propos</a>
+                <div class="header-link-language"> <!-- faut pas hésiter à rajouter une catégorie spéciale pour un truc comme ça, n'oublie pas la loi de proximité, ça peut s'appliquer aussi en dev -->
+                    <a href="#" id="lang-fr" onclick="changeLanguage('fr')">FR</a>
+                    <a href="#" id="lang-en"onclick="changeLanguage('en')">EN</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main> 
+        <div class="hero">
+            <img src="assets/images/pictures/BugattiChironResized.png" alt="Bugatti Chiron" id="hero-background">
+            <div class="hero-content">
+                <h1 data-i18n="hero_heading">Bugatti Chiron</h1>
+                <p data-i18n="hero_paragraph">
+                    Une fusion parfaite entre ingénierie de pointe et design audacieux. Plus qu'une voiture, une déclaration d'excellence
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container-specs">
+                <img src="assets/images/pictures/BugattiChironMontre.jpg" alt="Moteur W16 de la Bugatti Chiron" data-animation="animate-left">
+                <p data-i18n="section_1_paragraph" data-animation="animate-right">
+                    Sous sa carrosserie sculptée se cache un monstre d'ingéniérie: un W16 quadri-turbo développant 1500 chevaux...
+                </p>
+            </div>
+            <div class="container-specs">
+                <p data-i18n="section_2_paragraph" data-animation="animate-left">
+                    La Bugatti Chiron n’est pas faite pour les vitrines. C’est sur les routes sinueuses...
+                </p>
+                <img src="assets/images/pictures/ChironMontagne.jpg" alt="Chiron dans les Alpes" data-animation="animate-right">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-left-side">
+            <p data-i18n="footer_copyright">© 2025 BUGATTI AUTOMOBILE S.A.S</p>
+            <nav class="footer-link">
+                <li><a href="#" data-i18n="footer_legal_notice">Legal Notice</a></li>
+                <li><a href="#" data-i18n="footer_privacy_policy">Privacy Policy</a></li>
+                <li><a href="#" data-i18n="footer_cookie_policy">Cookie Policy</a></li>
+                <li><a href="#" data-i18n="footer_privacy_settings">Privacy Settings</a></li>
+                <li><a href="#" data-i18n="footer_compliance">Compliance & Whistleblower</a></li>
+                <li><a href="#" data-i18n="footer_fuel">Fuel Consumption</a></li>
+                <li><a href="#" data-i18n="footer_slavery">Modern Slavery Statement</a></li>
+                <li><a href="#" data-i18n="footer_gender_index">Gender Equality Index</a></li>
+            </nav>
+
+            <div class="footer-icon">
+                <a href="https://www.linkedin.com/in/axelnicolas25/" target="_blank"><img src="assets/images/icons/Linkedin.svg" alt="Linkedin Icon"></a>
+                <a href="https://www.youtube.com/channel/UCS55e2-ZslXqGzznB_7N4Sg" target="_blank"><img src="assets/images/icons/Youtube.svg" alt="Youtube Icon"></a>
+                <a href="https://x.com/MasterAcnolo" target="_blank"><img src="assets/images/icons/Twitter.svg" alt="Twitter X Icon"></a>
+                <a href="https://github.com/MasterAcnolo" target="_blank"><img src="assets/images/icons/GitHub.svg" alt="GitHub Icon"></a>
+                
+            </div>
+        </div>
+
+        <div class="footer-right-side">
+            <p data-i18n="footer_language">Langue</p>
+            <div class="footer-language">
+                <button onclick="changeLanguage('en')" data-i18n="footer_english">English</button>
+                <button onclick="changeLanguage('fr')" data-i18n="footer_french">Français</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/loader.js"></script>
+    <script src="script/language.js"></script>
+    <script src="script/hamburger.js"></script>
+    <script src="script/animations.js"></script>
+
+</body>
+</html>

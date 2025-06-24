@@ -84,6 +84,16 @@ const profilePictures = [
     title: 'Murphy - The 100',
     description: 'G.O.A.T Of The 100',
   },
+  {
+    src: '../assets/images/pfp/profilepicture20.webp',
+    title: 'Kirito',
+    description: 'Never look back',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture21.webp',
+    title: 'Kirito',
+    description: 'Always look front',
+  },
 ];
 
 const gallery = document.getElementById('gallery');

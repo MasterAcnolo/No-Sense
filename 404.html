@@ -1,83 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>404 Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
       background: #0e0e0e;
-      color: #00ffcc;
-      font-family: 'Courier New', monospace;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+      color: white;
+      font-family: 'Inter', sans-serif;
       height: 100vh;
-      overflow: hidden;
-      user-select: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .error-container {
+      background-color: rgba(20, 20, 20, 0.8);
+      padding: 2rem 3rem;
+      border-radius: 15px;
+      text-align: center;
+      animation: fadeInUp 1s ease-out forwards;
+      box-shadow: 0 0 20px rgba(255,255,255,0.05);
     }
     h1 {
       font-size: clamp(3rem, 10vw, 6rem);
-      position: relative;
-      animation: glitch 1s infinite;
+      margin: 0;
     }
     p {
       font-size: 1.2rem;
-      margin: 1rem;
-      max-width: 90%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      color: #cccccc;
     }
     a {
-      margin-top: 1.5rem;
+      display: inline-block;
       padding: 0.6em 1.2em;
-      background: #ff3366;
-      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      border: 1px solid white;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.3s ease;
     }
     a:hover {
-      background: #cc294f;
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
     }
-    @keyframes glitch {
-      0% { transform: translate(0); }
-      20% { transform: translate(-2px, 2px); }
-      40% { transform: translate(2px, -2px); }
-      60% { transform: translate(-1px, 1px); }
-      80% { transform: translate(1px, -1px); }
-      100% { transform: translate(0); }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-    #typed {
+    .quote {
+      font-style: italic;
+      color: #999;
       font-size: 1rem;
-      margin-top: 1rem;
-      height: 1.5em;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 2px solid #00ffcc;
-      width: 22ch;
-      animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
-    }
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 22ch }
-    }
-    @keyframes blink {
-      50% { border-color: transparent }
     }
   </style>
 </head>
 <body>
-  <h1>404</h1>
-  <p>This page doesn’t exist.<br>Maybe it’s in another timeline...</p>
-  <div id="typed">> redirecting reality.exe</div>
-  <a href="index.html">Go Home</a>
-
-  <script>
-    console.log("%cYou found the secret console zone 🕵️‍♂️", "color:#ff3366;font-weight:bold;font-size:16px;");
-    console.log("Oh ! You are finally awake");
-  </script>
+  <div class="error-container">
+    <h1>404</h1>
+    <p>This page doesn’t exist or was lost in the void.</p>
+    <div class="quote">“You’re searching for something that isn’t here”</div>
+    <br />
+    <a href="index.html">Return Home</a>
+  </div>
 </body>
 </html>

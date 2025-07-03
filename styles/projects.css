@@ -207,16 +207,23 @@ body {
 }
 
 #FreedomLoader{
-  background: url("../assets/projectpictures/Freedom\ Loader.webp");
+  background: url("../assets/projectpictures/FreedomLoader2.webp");
   /* filter: brightness(50%); */
   background-size: cover;
   background-position: center center;
 }
 
-#FreedomLoader::after {
+#FreedomLoader::after { /* Pour avoir un petit fond assombri*/
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.8); /* 0.5 = 50% noir, donc assombri */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+#R6AgentPicker{
+  background: url("../assets/projectpictures/r6picker.webp");
+  /* filter: brightness(50%); */
+  background-size: cover;
+  background-position: center center;
 }

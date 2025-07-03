@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Agent Picker</title>
+
+    <link rel="icon" href="assets/icons/rainbow-six-siege-logo.svg">
+
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <div class="loader"></div>
+
+    <header>
+        <h1>Random R6 Operator Picker</h1>
+    </header>
+
+    <div class="pick-both-container">
+        <button id="pick-both-btn" onclick="PickBoth()">Pick All</button>
+    </div>
+
+    <div class="container">
+        
+        <div class="defense">
+            <button id="defense-submit" class="defense-submit" onclick="R6randomDefenseOperator()">Get Defense</button>
+            <div id="defense-output" class="defense-output"></div>
+        </div>
+        
+
+        <div class="attack">
+            <button id="attack-submit" class="attack-submit" onclick="R6randomAttackOperator()">Get Attack</button>
+            <div id="attack-output" class="attack-output"></div>
+        </div>
+
+    </div>
+    
+    <div class="map">
+        <button id="map-submit" onclick="R6randomMap()">Get Map</button>
+        <div id="map-output" class="map-output"></div>
+    </div>
+
+
+    <script src="script/loader.js"></script>
+    <script src="script/agent.js"></script>
+    <script src="script/maps.js"></script>
+</body>
+</html>

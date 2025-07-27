@@ -1,0 +1,28 @@
+.Orbite-Mars, .Mars {
+    z-index: 2;
+}
+
+.Orbite-Mars {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 700px;
+    height: 700px;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(255, 100, 100, 0.4);
+    border-width: 3px;
+    border-radius: 50%;
+    animation: rotation 6s linear infinite;
+}
+
+.Mars {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    background-color: #c1440e;
+    border-radius: 50%;
+    z-index: 2;
+}

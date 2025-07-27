@@ -38,6 +38,8 @@ body {
   animation: fadeInUp 1s ease-out forwards;
   animation-delay: 0.8s;
   animation-fill-mode: both;
+  /* border-color: 7px solid red; */
+  height: 100%;
 }
 
 .text-block {
@@ -170,8 +172,10 @@ body {
   body {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: auto;
     background-position: center;
+    
   }
 
   *{
@@ -181,12 +185,12 @@ body {
 
   .container,.header-line{
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
   }
 
   .container {
     grid-area: auto;
-    padding: 2rem 1rem;
+    /* padding: 2rem 1rem; */
     text-align: center;
   }
 
@@ -228,11 +232,15 @@ body {
   }
 
   .discover-float {
-  position: static;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
+    position: static;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .discover-link{
+    margin-bottom: 5%;
+  }
 
 }
 

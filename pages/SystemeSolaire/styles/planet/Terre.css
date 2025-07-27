@@ -1,0 +1,29 @@
+.Orbite-Terre, .Terre {
+    z-index: 2;
+}
+
+.Orbite-Terre {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    border: 1px dashed rgba(100, 180, 255, 0.4);
+    border-width: 3px;
+    border-radius: 50%;
+    animation: rotation 6.5s linear infinite;
+}
+
+.Terre {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    width: 26px;
+    height: 26px;
+    background: radial-gradient(circle, #4d94ff, #0066cc);
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}

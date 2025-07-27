@@ -1,0 +1,25 @@
+.Orbite-Neptune {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1400px;
+  height: 1400px;
+  transform: translate(-50%, -50%);
+  border: 1px dashed rgba(100, 150, 255, 0.3);
+  border-radius: 50%;
+  animation: rotation 22s linear infinite;
+  z-index: 1;
+}
+
+.Neptune {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background-color: #4169e1;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 4px rgba(100, 150, 255, 0.3);
+  z-index: 2;
+}

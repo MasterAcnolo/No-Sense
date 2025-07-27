@@ -1,0 +1,3 @@
+Objectif: Avoir une simulation plane du système Solaire. Des Planètes qui tournent autour du soleil, avec les axes
+
+Objectif BIS: Voir la Translation des planètes. 

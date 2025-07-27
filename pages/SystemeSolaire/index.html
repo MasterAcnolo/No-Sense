@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système Solaire</title>
+    <link rel="stylesheet" href="styles/import.css">
+</head>
+<body>
+
+    <div id="content" class="content">  <!-- Initialement caché -->
+
+        <div class="solar-system" id="systeme-solaire">
+            
+            <div class="Orbite-Soleil"><div class="Soleil"></div></div>
+            
+            <div class="Orbite-Mercure"><div class="Mercure"></div></div>
+
+            <div class="Orbite-Venus"><div class="Venus"></div></div>
+
+            <div class="Orbite-Terre"><div class="Terre"></div></div>
+
+            <div class="Orbite-Mars"><div class="Mars"></div></div>
+
+            <div class="Orbite-Jupiter"><div class="Jupiter"></div></div>
+
+            <div class="Orbite-Saturne"><div class="Saturne"></div></div>
+
+            <div class="Orbite-Uranus"><div class="Uranus"></div></div>
+
+            <div class="Orbite-Neptune"><div class="Neptune"></div></div>
+
+        </div>
+    </div>
+
+    <div id="loader" class="loading-screen"> <!-- Le loader est toujours affiché en attendant le chargement -->
+        <div class="orbit-loader">
+            <div class="planet"></div>
+        </div>
+        <p>Chargement du système solaire...</p>
+    </div>
+
+    <script src="js/loader.js"></script>
+</body>
+</html>

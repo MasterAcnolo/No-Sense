@@ -1,0 +1,25 @@
+.Orbite-Jupiter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 950px;
+  height: 950px;
+  transform: translate(-50%, -50%);
+  border: 1px dashed rgba(255, 200, 150, 0.4);
+  border-radius: 50%;
+  animation: rotation 12s linear infinite;
+  z-index: 1;
+}
+
+.Jupiter {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #d2b48c, #8b4513);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px rgba(255, 255, 200, 0.3);
+  z-index: 2;
+}

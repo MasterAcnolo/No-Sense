@@ -222,6 +222,7 @@ body {
     grid-area: auto;
     width: 100%;
     padding: 1rem 0;
+ 
   }
 
   .spotify-embed iframe {
@@ -233,7 +234,7 @@ body {
 
   .discover-float {
     position: static;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     display: flex;
     justify-content: center;
   }

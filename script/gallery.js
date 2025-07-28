@@ -85,6 +85,11 @@ const profilePictures = [
     description: 'G.O.A.T Of The 100',
   },
   {
+    src: '../assets/images/pfp/profilepicture29.gif',
+    title: 'Kirito Fighting',
+    description: 'This may be a virtual world, but I feel more alive here than in the real world.',
+  },
+  {
     src: '../assets/images/pfp/profilepicture20.webp',
     title: 'Kirito',
     description: 'Never look back',
@@ -94,6 +99,47 @@ const profilePictures = [
     title: 'Kirito',
     description: 'Always look front',
   },
+  {
+    src: '../assets/images/pfp/profilepicture22.webp',
+    title: 'Diamond style',
+    description: 'Thanks a lot Emil',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture23.webp',
+    title: 'Render Forest Addict',
+    description: '',
+  },
+  {
+    src: '../assets/images/pfp/NOTFOUND.webp',
+    title: 'GOT LOST',
+    description: 'Lost Media ?',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture24.webp',
+    title: 'Gray Fullbuster',
+    description: 'I don’t care where I get scarred. As long as they can be seen.',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture25.webp',
+    title: 'Zeleph Dragnir',
+    description: 'A good man',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture26.gif',
+    title: 'Natsu Dragnir',
+    description: 'Let’s save the tears for when we win.',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture27.webp',
+    title: '2 Years',
+    description: 'Gloire à Ulfric ! ',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture28.webp',
+    title: 'MasterAcnolo',
+    description: 'Tito Was Here',
+  },
+  
 ];
 
 const gallery = document.getElementById('gallery');

@@ -139,7 +139,11 @@ const profilePictures = [
     title: 'MasterAcnolo',
     description: 'Tito Was Here',
   },
-  
+  {
+    src: '../assets/images/pfp/profilepicture30.webp',
+    title: 'Flash MCQueen',
+    description: 'With bro',
+  },
 ];
 
 const gallery = document.getElementById('gallery');

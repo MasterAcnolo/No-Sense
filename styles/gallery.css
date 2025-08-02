@@ -1,4 +1,5 @@
 @import url(components/animations.css);
+@import url(components/loader.css);
 
 body {
   margin: 0;

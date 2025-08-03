@@ -44,6 +44,7 @@ const audio = document.getElementById('myAudio');
     });
 
     function openSpotify() {
-      const url = "https://open.spotify.com/intl-fr/track/2fIBmScNzkGmSJ3y2XsmEI?si=b3b65dd377ff4436";
+      // const url = "https://open.spotify.com/intl-fr/track/2fIBmScNzkGmSJ3y2XsmEI?si=b3b65dd377ff4436"; URL MUSIQUE
+      const url = "https://lyricstranslate.com/en/yamakasi-yamakasi.html";
       window.open(url, '_blank');
     }

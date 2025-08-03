@@ -82,31 +82,40 @@
   <button class="spotify-button" onclick="alertSpotify()">Start Song</button>
   </div> -->
 
+  
   <div class="audio-player">
     <div class="tooltip">
       <img src="assets/images/yamakasi-cover.webp" alt="Cover" class="cover-art" onclick="openSpotify()">
-      <span class="tooltip-text">Listen on Spotify</span>
+      <span class="tooltip-text">Check Lyrics</span>
     </div>
 
     <div class="track-info">
       <div class="meta">
-        <h3 class="track-title">Yamakasi</h3>
-        <p class="track-artist">Miyagi & Andy Panda</p>
+        <p class="track-title">
+          <a href="https://open.spotify.com/intl-fr/track/2fIBmScNzkGmSJ3y2XsmEI?si=d55188e524ef49b2" target="_blank" rel="noopener noreferrer">
+            Yamakasi
+          <!-- <img src="assets/icons/spotify-brands.svg" class="spotify-icon"> -->
+          </a>
+        </p>
+          <p class="track-artist">
+          <a href="https://open.spotify.com/intl-fr/artist/0hmUwzWBrPHpGWGrYH05c3?si=j-3fRLfJSXC3QJFRzR_wSQ" target="_blank" rel="noopener noreferrer">
+            Miyagi & Andy Panda
+            <!-- <img src="assets/icons/spotify-brands.svg" class="spotify-icon"> -->
+          </a>
+        </p>
       </div>
 
+
       <div class="controls">
-        <div class="tooltip">
-          <button id="playBtn" class="play-button">
-            <svg id="playIconPlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M3 22v-20l18 10-18 10z"/>
-            </svg>
-            <svg id="playIconPause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
-              <path d="M6 4h4v16H6zm8 0h4v16h-4z"/>
-            </svg>
-          </button>
-          <span class="tooltip-text">Lire / Pause</span>
-        </div>
-        
+        <button id="playBtn" class="play-button">
+          <svg id="playIconPlay" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M3 22v-20l18 10-18 10z"/>
+          </svg>
+          <svg id="playIconPause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+            <path d="M6 4h4v16H6zm8 0h4v16h-4z"/>
+          </svg>
+        </button>
+
         <div class="seek-container">
           <input type="range" id="seekSlider" value="0" min="0" max="100">
           <div class="time-row">
@@ -115,6 +124,7 @@
           </div>
         </div>
       </div>
+
 
       <div class="volume-row">
         <svg xmlns="http://www.w3.org/2000/svg" class="volume-icon" viewBox="0 0 24 24">

@@ -1,0 +1,127 @@
+<div class="audio-player">
+  <img src="assets/images/yamakasi-cover.webp" alt="Cover" class="cover-art">
+  
+  <div class="track-info">
+    <div class="track-title">Yamakasi</div>
+    <div class="track-artist">Miyagi & Andy Panda</div>
+
+    <div class="controls">
+      <button id="playBtn">▶️</button>
+      <input type="range" id="seekSlider" value="0" min="0" max="100">
+      <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume-control">
+      🔊 <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+    </div>
+  </div>
+
+  <audio id="myAudio" src="assets/music/Yamakasi [EDIT].m4a"></audio>
+</div>
+
+<style>
+
+  .audio-player {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+.cover-art {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.track-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.track-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.track-artist {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#seekSlider {
+  flex: 1;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+</style>
+<script>
+    const audio = document.getElementById('myAudio');
+const playBtn = document.getElementById('playBtn');
+const volumeSlider = document.getElementById('volumeSlider');
+const currentTime = document.getElementById('currentTime');
+const duration = document.getElementById('duration');
+const seekSlider = document.getElementById('seekSlider');
+
+// Quand les métadonnées sont chargées (durée dispo)
+audio.addEventListener('loadedmetadata', () => {
+  duration.textContent = formatTime(audio.duration);
+});
+
+// Mise à jour du temps et de la barre de progression
+audio.addEventListener('timeupdate', () => {
+  currentTime.textContent = formatTime(audio.currentTime);
+  seekSlider.value = (audio.currentTime / audio.duration) * 100;
+});
+
+// Play / pause
+playBtn.addEventListener('click', () => {
+  if (audio.paused) {
+    audio.play();
+    playBtn.textContent = '⏸️';
+  } else {
+    audio.pause();
+    playBtn.textContent = '▶️';
+  }
+});
+
+// Volume
+volumeSlider.addEventListener('input', () => {
+  audio.volume = volumeSlider.value;
+});
+
+// Seek
+seekSlider.addEventListener('input', () => {
+  audio.currentTime = (seekSlider.value / 100) * audio.duration;
+});
+
+// Format de temps mm:ss
+function formatTime(seconds) {
+  const mins = Math.floor(seconds / 60);
+  const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
+  return `${mins}:${secs}`;
+}
+
+</script>

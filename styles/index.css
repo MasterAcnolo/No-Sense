@@ -1,5 +1,7 @@
 @import url("components/animations.css");
 @import url("components/spotifyembed.css");
+@import url("components/audioplayer.css");
+@import url("components/tooltip.css");
 
 body {
   background: url("../assets/images/Background1.webp");
@@ -137,7 +139,7 @@ body {
   right: 2rem;
   z-index: 20;
   animation: fadeInUp 1s ease-out forwards;
-  animation-delay: 1.4s;
+  animation-delay: 1.8s;
   animation-fill-mode: both;
 }
 

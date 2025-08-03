@@ -228,3 +228,18 @@ body {
   background-size: cover;
   background-position: center center;
 }
+
+#nf-api{
+  background: url("../assets/projectpictures/NF4.webp");
+  /* filter: brightness(75%); */
+  background-size: cover;
+  background-position: center center;
+}
+
+#nf-api::after { /* Pour avoir un petit fond assombri*/
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}

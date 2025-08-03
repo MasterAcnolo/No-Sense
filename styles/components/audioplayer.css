@@ -178,6 +178,16 @@ input[type=range]::-ms-thumb {
   font-size: 0.75rem;
   color: #aaa;
   padding: 0 0.3rem;
+  min-width: 0;
+  flex-wrap: nowrap; 
+}
+
+.time-row span {
+  max-width: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 1;
 }
 
 .volume-row {
@@ -283,5 +293,12 @@ input[type=range]::-ms-thumb {
 
   .volume-row input {
     width: 80px;
+  }
+
+  .time-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    font-size: 0.7rem;
   }
 }

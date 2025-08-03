@@ -229,7 +229,7 @@ input[type=range]::-ms-thumb {
 @media (max-width: 840px) {
 
    .audio-player {
-    grid-area: auto; /* enlève la grille sur petit écran */
+    grid-area: auto; 
     justify-self: center;
     width: 70%;
     max-width: 900px;

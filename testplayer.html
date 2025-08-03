@@ -1,5 +1,13 @@
-<div class="audio-player">
-  <img src="assets/images/yamakasi-cover.webp" alt="Cover" class="cover-art">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="audio-player">
+  <img src="assets/images/yamakasi-cover.webp" alt="Cover" class="cover-art" onclick="openSpotify()">
 
   <div class="track-info">
     <div class="meta">
@@ -9,7 +17,9 @@
 
     <div class="controls">
       <button id="playBtn" class="play-button">
-        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+        <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+          <path d="M3 22v-20l18 10-18 10z"/>
+        </svg>
       </button>
       <input type="range" id="seekSlider" value="0" min="0" max="100">
     </div>
@@ -20,17 +30,18 @@
     </div>
 
     <div class="volume-row">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+      <svg xmlns="http://www.w3.org/2000/svg" class="volume-icon" width="20" height="20" fill="white" viewBox="0 0 24 24">
         <path d="M3 10v4h4l5 5v-14l-5 5h-4zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.26 2.5-4.02z"/>
       </svg>
       <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
     </div>
+
+
+
   </div>
 
   <audio id="myAudio" src="assets/music/Yamakasi [EDIT].m4a"></audio>
 </div>
-
-
 
 <style>
 
@@ -38,7 +49,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background: rgba(20, 20, 20, 0.9);
+  background: rgba(20, 20, 20, 0.92);
   border-radius: 20px;
   padding: 1.5rem;
   color: white;
@@ -47,7 +58,16 @@
   max-width: 700px;
   margin: 2rem auto;
   flex-wrap: wrap;
-  transition: background 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .cover-art {
@@ -56,11 +76,10 @@
   border-radius: 15px;
   object-fit: cover;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
-
 .cover-art:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) rotate(1deg);
 }
 
 .track-info {
@@ -75,13 +94,11 @@
   flex-direction: column;
   gap: 0.2rem;
 }
-
 .track-title {
   font-size: 1.4rem;
   margin: 0;
   font-weight: 600;
 }
-
 .track-artist {
   font-size: 0.95rem;
   color: #ccc;
@@ -98,13 +115,15 @@
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0.3rem;
+  padding: 0.4rem;
   border-radius: 50%;
-  transition: background 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease;
 }
-
 .play-button:hover {
   background: rgba(255, 255, 255, 0.1);
+}
+.play-button:active {
+  transform: scale(1.15);
 }
 
 #seekSlider {
@@ -116,8 +135,13 @@
   transition: all 0.2s ease;
   cursor: pointer;
 }
+#seekSlider:hover {
+  background: #1db954;
+  height: 5px;
+}
 
-.time-row, .volume-row {
+.time-row,
+.volume-row {
   display: flex;
   justify-content: space-between;
   font-size: 0.85rem;
@@ -126,20 +150,42 @@
 }
 
 .volume-row {
+  display: flex;
+  align-items: center;
   gap: 0.6rem;
+  justify-content: flex-start; /* <-- ajoute ça pour éviter l'étirement */
+  width: fit-content; /* <-- réduit la largeur à son contenu */
+}
+
+
+.volume-row svg {
+  flex-shrink: 0;
 }
 
 .volume-row input {
-  width: 80px;
-  height: 3px;
+  width: 120px;
+  height: 4px;
   accent-color: #1db954;
   background: #444;
   border-radius: 2px;
   transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.volume-row input:hover {
+  background: #1db954;
+  height: 5px;
 }
 
 
+
 </style>
+</body>
+</html>
+
+
+
+
 <script>
 const audio = document.getElementById('myAudio');
 const playBtn = document.getElementById('playBtn');
@@ -149,38 +195,54 @@ const currentTime = document.getElementById('currentTime');
 const duration = document.getElementById('duration');
 const seekSlider = document.getElementById('seekSlider');
 
-audio.addEventListener('loadedmetadata', () => {
-  duration.textContent = formatTime(audio.duration);
-});
-
-audio.addEventListener('timeupdate', () => {
-  currentTime.textContent = formatTime(audio.currentTime);
-  seekSlider.value = (audio.currentTime / audio.duration) * 100;
-});
-
-playBtn.addEventListener('click', () => {
-  if (audio.paused) {
-    audio.play();
-    playIcon.innerHTML = '<path d="M6 4h4v16H6zm8 0h4v16h-4z"/>'; // Pause icon
-  } else {
-    audio.pause();
-    playIcon.innerHTML = '<path d="M3 22v-20l18 10-18 10z"/>'; // Play icon
-  }
-});
-
-volumeSlider.addEventListener('input', () => {
-  audio.volume = volumeSlider.value;
-});
-
-seekSlider.addEventListener('input', () => {
-  audio.currentTime = (seekSlider.value / 100) * audio.duration;
-});
-
+// Format mm:ss
 function formatTime(seconds) {
   const mins = Math.floor(seconds / 60);
   const secs = Math.floor(seconds % 60).toString().padStart(2, '0');
   return `${mins}:${secs}`;
 }
 
+// Charger la durée
+audio.addEventListener('loadedmetadata', () => {
+  duration.textContent = formatTime(audio.duration);
+});
+
+// Mettre à jour le curseur
+audio.addEventListener('timeupdate', () => {
+  currentTime.textContent = formatTime(audio.currentTime);
+  seekSlider.value = (audio.currentTime / audio.duration) * 100;
+});
+
+// Lecture/pause
+playBtn.addEventListener('click', () => {
+  playIcon.style.transition = "transform 0.3s ease";
+  playIcon.style.transform = "scale(1.2)";
+
+  setTimeout(() => {
+    if (audio.paused) {
+      audio.play();
+      playIcon.innerHTML = '<path d="M6 4h4v16H6zm8 0h4v16h-4z"/>'; // Pause
+    } else {
+      audio.pause();
+      playIcon.innerHTML = '<path d="M3 22v-20l18 10-18 10z"/>'; // Play
+    }
+    playIcon.style.transform = "scale(1)";
+  }, 100);
+});
+
+// Volume
+volumeSlider.addEventListener('input', () => {
+  audio.volume = volumeSlider.value;
+});
+
+// Seek
+seekSlider.addEventListener('input', () => {
+  audio.currentTime = (seekSlider.value / 100) * audio.duration;
+});
+
+function openSpotify() {
+  const url = "https://open.spotify.com/intl-fr/track/2fIBmScNzkGmSJ3y2XsmEI?si=b3b65dd377ff4436"; // Remplace par ton lien Spotify
+  window.open(url, '_blank');
+}
 
 </script>

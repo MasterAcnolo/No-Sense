@@ -1,6 +1,6 @@
 async function changeLanguage(lang) {
     try {
-        const response = await fetch(`script/lang/${lang}.json`);
+        const response = await fetch(`https://masteracnolo.github.io/No-Sense/script/lang/${lang}.json`);
         const translations = await response.json();
 
         for (const key in translations) {

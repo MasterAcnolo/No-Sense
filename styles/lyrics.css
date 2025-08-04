@@ -1,0 +1,157 @@
+@import url("components/animations.css");
+@import url("components/loader.css");
+@import url("components/button.css");
+
+body {
+  background: url("../assets/images/miyagi.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  /* user-select: none; */
+}
+
+body.lang-ru { font-size: 1.35rem; line-height: 1.7; }
+body.lang-ru-romanized { font-style: italic; }
+
+.back-link {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center ;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.5em 1.2em;
+  font-size: 0.95rem;
+  background-color: transparent;
+  border: 1px solid #666;
+  color: #ccc;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.2s ease;
+  user-select: none;
+}
+
+.back-link:hover {
+  background-color: #222;
+  color: #fff;
+  border-color: #aaa;
+}
+
+.back-link .icon-left {
+  width: 16px;
+  height: 16px;
+  filter: invert(80%);
+  transition: 0.2s ease;
+}
+
+.back-link:hover .icon-left {
+  filter: invert(100%);
+}
+
+.flags{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+    user-select: none;
+}
+
+.flags button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.flags img{
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+.flags img:hover{
+   transform: scale(1.2);
+   opacity: 0.9;
+   transition: all 0.3s;
+}
+
+.container {
+  max-width: 700px;
+  min-width: 500px; 
+  margin: 4rem auto 0 auto;
+  padding: 1rem;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.lyrics {
+  max-width: 800px;
+  margin: 0 auto; 
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  white-space: pre-line;
+  text-align: left;
+  padding: 0 1rem; 
+  margin-left: 5rem;
+  margin-right: auto;  
+  
+}
+
+.flag-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.flag-tooltip .tooltip-text {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 5px 8px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  margin-top: 6px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.flag-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 670px) {
+  .lyrics {
+    font-size: 1.2rem; 
+    margin-left: 1rem; 
+    padding: 0 0.5rem; 
+  }
+
+  .container {
+    max-width: 100%;
+    min-width: auto;
+    padding: 1rem 0.5rem;
+  }
+}
+

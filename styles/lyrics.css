@@ -142,6 +142,7 @@ body.lang-ru-romanized { font-style: italic; }
 }
 
 @media (max-width: 670px) {
+
   .lyrics {
     font-size: 1.2rem; 
     margin-left: 1rem; 
@@ -153,5 +154,27 @@ body.lang-ru-romanized { font-style: italic; }
     min-width: auto;
     padding: 1rem 0.5rem;
   }
+
+  .flags{
+    gap: 0.05rem ;
+  }
+
+  .flags img{
+    width: 35px;
+  }
+
+  .back-link{
+    font-size: 0.8rem;
+  }
 }
 
+@media (max-width: 355px) {
+/*   
+   .flags, .back-link{
+    position:static;
+  } */
+
+ .flags img{
+    width: 25px;
+  }
+}

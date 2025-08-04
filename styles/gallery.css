@@ -21,6 +21,9 @@ header {
 }
 
 .back-link {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
   display: inline-flex;
   align-items: center ;
   align-items: center;

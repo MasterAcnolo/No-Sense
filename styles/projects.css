@@ -243,3 +243,9 @@ body {
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
+
+#RandomSong{
+  background: url("../assets/projectpictures/TherapySession.webp");
+  background-size: cover;
+  background-position: center center;
+}

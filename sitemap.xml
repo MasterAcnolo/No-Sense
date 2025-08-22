@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap du site No-Sense créé par MasterAcnolo -->
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/status.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/gallery.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/lyrics.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/projects.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/BugattiChiron/index.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/RandomSong/index.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/R6AgentPicker/index.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/SystemeSolaire/index.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/RandomQuotes/index.html</loc>
+  <lastmod>2025-08-19T11:58:37+00:00</lastmod>
+  <priority>0.4</priority>
+</url>
+
+
+</urlset>

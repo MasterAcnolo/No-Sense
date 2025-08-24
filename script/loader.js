@@ -9,7 +9,7 @@
       });
 
 
-
-async function alertSpotify(){
-  alert("Sorry, not working actually :(")
-}
+// C'est utile de mettre ça si jamais j'ai un soucis avec l'audioplayer
+// async function alertSpotify(){
+//   alert("Sorry, not working actually :(")
+// }

@@ -1,7 +1,7 @@
 @import url("tooltip.css");
 
 .audio-player {
-  grid-area: 5 / 3 / 6 / 6;
+  grid-area: 6 / 3 / 6 / 6;
   display: flex;
   align-items: center;
   justify-content: space-between;

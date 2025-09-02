@@ -1,7 +1,11 @@
 @import url("tooltip.css");
 
 .audio-player {
-  grid-area: 6 / 3 / 6 / 6;
+  
+  grid-area: 5 / 3 / 6 / 6;
+  align-self: start; /* ou center */
+  position: relative;
+  top: 25%; /* décalage à l’intérieur de sa zone */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,7 +20,6 @@
   max-width: 900px;
   margin: 2rem auto;
   opacity: 0;
-  transform: translateY(20px);  
   animation: fadeInUp 1s ease-out forwards;
   animation-delay: 1.4s;
   
@@ -230,9 +233,9 @@ input[type=range]::-ms-thumb {
    .audio-player {
     grid-area: auto; 
     justify-self: center;
-    width: 70%;
+    width: 90%;
     max-width: 900px;
-    margin: 2rem auto;
+    margin: 2rem auto 10rem auto; /* <- garde un décalage en bas */
   }
 
   .cover-art {

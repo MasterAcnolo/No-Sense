@@ -144,6 +144,16 @@ const profilePictures = [
     title: 'Flash MCQueen',
     description: 'With bro',
   },
+  {
+    src: '../assets/images/pfp/profilepicture31.webp',
+    title: 'Dogo',
+    description: 'Dogo Supremacy',
+  },
+  {
+    src: '../assets/images/pfp/profilepicture32.webp',
+    title: 'Wucanit Benou',
+    description: '🎷',
+  },
 ];
 
 const gallery = document.getElementById('gallery');

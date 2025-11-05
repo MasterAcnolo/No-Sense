@@ -1,0 +1,59 @@
+
+#menuFuseaux {
+    position: fixed;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    text-align: center;
+    z-index: 1000; 
+}
+
+
+#FuseauText{
+    margin-top: 0;
+    font-size: 18px;
+   
+
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 447;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+#selectFuseau {
+    
+    appearance: none;
+    border: 0;
+    outline: 0;
+    
+    width: 20rem;
+    padding: 1rem 4rem 1rem 1rem;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+      linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: var(--text-color);
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    
+    
+    &::-ms-expand {
+      display: none;
+    }
+   
+    &:focus {
+      outline: none;
+    }
+    
+    option {
+      color: inherit;
+      background-color: var(--option-bg);
+    }
+  }
+  

@@ -4,12 +4,12 @@
 	<url>
 		<loc>https://masteracnolo.github.io/No-Sense/</loc>
 		<priority>1.00</priority>
-		<lastmod>2025-08-22</lastmod>
+		<lastmod>2025-11-05</lastmod>
 	</url>
 	<url>
 		<loc>https://masteracnolo.github.io/No-Sense/pages/projects.html</loc>
 		<priority>0.90</priority>
-		<lastmod>2025-08-19</lastmod>
+		<lastmod>2025-11-05</lastmod>
 	</url>
 	<url>
 		<loc>https://masteracnolo.github.io/No-Sense/pages/gallery.html</loc>
@@ -50,5 +50,10 @@
 		<loc>https://masteracnolo.github.io/No-Sense/pages/RandomSong/index.html</loc>
 		<priority>0.40</priority>
 		<lastmod>2025-08-19</lastmod>
+	</url>
+	<url>
+		<loc>https://masteracnolo.github.io/No-Sense/pages/Clock/index.html</loc>
+		<priority>0.40</priority>
+		<lastmod>2025-11-05</lastmod>
 	</url>
 </urlset>

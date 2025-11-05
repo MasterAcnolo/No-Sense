@@ -1,0 +1,20 @@
+
+.Digital {
+    position: relative;
+    gap: 10px; 
+    
+  }
+  
+.time, .date {
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+  
+p {
+    margin: 0; 
+    font-family: Digital;
+    font-size: 250%;
+    color: var(--text-color);
+}
+

@@ -1,0 +1,28 @@
+/* Default Configuration*/
+
+:root {
+    /* Thème par Défaut */
+    --text-color: white;
+    --background-color: #273746;
+
+    --background-clock-color: #f0f3f4;
+    --aiguilles-secondes-color: red;
+    --aiguilles-minutes-color: #666;
+    --aiguilles-heures-color: #333;
+    --trait-color: black;
+    --border-color: black;
+
+    --text-button-color: rgb(255, 255, 255);
+    --button-bg-color: #334a5f;
+    --button-border-color: white;
+
+    --dot-color: rgb(53, 53, 53);
+
+    --arrow-bg: rgba(255, 255, 255, 0.3);
+    --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
+    --option-bg: #273746;
+    --select-bg: rgba(255, 255, 255, 0.2);
+
+    --bg-chichi: url('../img/Chirac.jpg');
+}
+

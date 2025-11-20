@@ -5,68 +5,139 @@
   <title>404 Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
   <style>
+    /* ===== Fond spatial animé ===== */
     body {
       margin: 0;
       padding: 0;
-      background: #0e0e0e;
-      color: white;
-      font-family: 'Inter', sans-serif;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      background: radial-gradient(circle at 20% 20%, #1c1c1c, #0c0c0c 80%);
+      overflow: hidden;
+      position: relative;
     }
+
+    /* ===== étoiles qui passent ===== */
+    .star {
+      position: absolute;
+      top: -10px;
+      width: 2px;
+      height: 2px;
+      background: white;
+      opacity: 0.6;
+      animation: starFall 10s infinite linear;
+    }
+    @keyframes starFall {
+      0% { transform: translate(0,0); opacity: 0; }
+      10% { opacity: 0.8; }
+      100% { transform: translate(300px, 120vh); opacity: 0; }
+    }
+    
+    /* Génère quelques étoiles en JS */
+  </style>
+
+  <style>
+    /* ===== Conteneur ===== */
     .error-container {
-      background-color: rgba(20, 20, 20, 0.8);
       padding: 2rem 3rem;
-      border-radius: 15px;
+      border-radius: 20px;
       text-align: center;
+      position: relative;
+      backdrop-filter: blur(6px);
+      background: rgba(20, 20, 20, 0.3);
+      box-shadow: 0 0 40px rgba(255,255,255,0.05);
       animation: fadeInUp 1s ease-out forwards;
-      box-shadow: 0 0 20px rgba(255,255,255,0.05);
     }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Titre glitch ===== */
     h1 {
       font-size: clamp(3rem, 10vw, 6rem);
       margin: 0;
+      position: relative;
+      animation: glitch 1.2s infinite;
     }
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 #ff3d3d, -2px 0 #00eaff; }
+      25% { text-shadow: -2px 0 #ff3d3d, 2px 0 #00eaff; }
+      50% { text-shadow: 2px 0 #ff3d3d, -2px 0 #00eaff; }
+      75% { text-shadow: -2px 0 #ff3d3d, 2px 0 #00eaff; }
+      100% { text-shadow: 2px 0 #ff3d3d, -2px 0 #00eaff; }
+    }
+
+    /* ===== Texte ===== */
     p {
       font-size: 1.2rem;
       margin-top: 1rem;
-      margin-bottom: 2rem;
       color: #cccccc;
     }
-    a {
-      display: inline-block;
-      padding: 0.6em 1.2em;
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
-      border: 1px solid white;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease, transform 0.3s ease;
-    }
-    a:hover {
-      background: rgba(255, 255, 255, 0.2);
-      transform: scale(1.05);
-    }
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+
+    /* ===== Citation machine à écrire ===== */
     .quote {
       font-style: italic;
       color: #999;
       font-size: 1rem;
+      margin-top: 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #999;
+      display: inline-block;
+      animation: typing 3.5s steps(60, end) forwards, blink 0.8s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      0% { border-color: #999; }
+      50% { border-color: transparent; }
+      100% { border-color: #999; }
+    }
+
+
+    /* ===== Bouton glass ===== */
+    a {
+      display: inline-block;
+      padding: 0.6em 1.4em;
+      background: rgba(255, 255, 255, 0.08);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.4);
+      text-decoration: none;
+      border-radius: 10px;
+      backdrop-filter: blur(4px);
+      transition: 0.25s ease;
+    }
+    a:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.06);
     }
   </style>
 </head>
+
 <body>
+
+  <!-- étoiles -->
+  <script>
+    for (let i = 0; i < 50; i++) {
+      let s = document.createElement("div");
+      s.className = "star";
+      s.style.left = Math.random() * window.innerWidth + "px";
+      s.style.animationDelay = (Math.random() * 10) + "s";
+      s.style.opacity = Math.random() * 0.7;
+      document.body.appendChild(s);
+    }
+  </script>
+
   <div class="error-container">
     <h1>404</h1>
     <p>This page doesn’t exist or was lost in the void.</p>
@@ -74,5 +145,6 @@
     <br />
     <a href="https://masteracnolo.github.io/No-Sense/">Return Home</a>
   </div>
+
 </body>
 </html>

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html {
+
+    /* Pattern */
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+
+
+    scroll-behavior: smooth;
+
+    font-family: "Raleway", sans-serif;
+  }
+
+
+.Title{
+
+    display: flex;
+    color: transparent;
+    
+    font-weight: bold;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5%;
+    font-size: 900%;
+
+    background-image: url('ressources/ciel2.avif');
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    z-index: 100;
+}
+
+
+
+
+.recherche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    width: 100%;
+    margin-top: 5%;
+}
+
+.recherche input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+    text-align: center;
+}
+
+.recherche input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+
+#suggestions {
+    background: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+    box-sizing: border-box;
+    overflow-y: auto; 
+    max-height: 500px;
+}
+
+#suggestions p {
+    margin: 0;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    text-align: left; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+
+
+#suggestions p:hover {
+    background: #f0f0f0;
+}
+
+
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+
+    position: absolute;
+    margin-top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+   }
+   
+button:hover {
+
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+   }
+   
+@keyframes pulse512 {
+    0% {
+     box-shadow: 0 0 0 0 #05bada66;
+    }
+   
+    70% {
+     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+   
+    100% {
+     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+   }
+
+.Output {
+    /*width: 90%; */
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /*background-color: #6FBEF6; */
+    /*background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+    text-align: center;
+    color: black;
+    opacity: 0;
+
+
+    /* La position en absolute c'est génial parfois */
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 400px;
+    
+}
+
+.Output.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mise en page du contenu météo */
+#resultat {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#resultat h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#resultat img {
+    width: 80px;
+    height: 80px;
+}
+
+#resultat p {
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .Output {
+        width: 95%;
+    }
+}
+
+
+/* From Uiverse.io by Mangesh636 // Modified by MasterAcnolo*/ 
+#GitHub {
+    /*background: transparent; */
+    
+    position: absolute; 
+    bottom: 50px;   
+    right: 20px; 
+
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid rgb(36, 41, 46);
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(36, 41, 46);
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    z-index: 100;
+  }
+  
+  #GitHub span {
+    margin: 10px;
+  }
+  
+  #GitHub::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  #GitHub:hover {
+    color: #fff;
+    border: 1px solid rgb(36, 41, 46);
+  }
+  
+  #GitHub:hover::before {
+    box-shadow: inset 0 0 0 10em rgb(36, 41, 46);
+  }
+  

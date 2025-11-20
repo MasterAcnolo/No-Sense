@@ -1,59 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/</loc>
-		<priority>1.00</priority>
-		<lastmod>2025-11-05</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/projects.html</loc>
-		<priority>0.90</priority>
-		<lastmod>2025-11-05</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/gallery.html</loc>
-		<priority>0.80</priority>
-		<lastmod>2025-08-19</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/status.html</loc>
-		<priority>0.70</priority>
-		<lastmod>2025-08-19</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/lyrics.html</loc>
-		<priority>0.60</priority>
-		<lastmod>2025-08-19</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/BugattiChiron/index.html</loc>
-		<priority>0.50</priority>
-		<lastmod>2025-08-19</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/RandomQuotes/index.html</loc>
-		<priority>0.40</priority>
-		<lastmod>2025-08-19</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/SystemeSolaire/index.html</loc>
-		<priority>0.40</priority>
-		<lastmod>2025-08-19</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/R6AgentPicker/index.html</loc>
-		<priority>0.40</priority>
-		<lastmod>2025-08-19</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/RandomSong/index.html</loc>
-		<priority>0.40</priority>
-		<lastmod>2025-08-19</lastmod>
-	</url>
-	<url>
-		<loc>https://masteracnolo.github.io/No-Sense/pages/Clock/index.html</loc>
-		<priority>0.40</priority>
-		<lastmod>2025-11-05</lastmod>
-	</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/status.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/gallery.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/lyrics.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/projects.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/index.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/FreedomLoader/index.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/BugattiChiron/index.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/RandomSong/index.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/R6AgentPicker/index.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/Clock/index.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/SystemeSolaire/index.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/pages/RandomQuotes/index.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/FreedomLoader/pages/about.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/FreedomLoader/pages/wiki.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/FreedomLoader/pages/faq.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/FreedomLoader/pages/download.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/FreedomLoader/pages/legal/contact.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/FreedomLoader/pages/legal/privacy.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://masteracnolo.github.io/No-Sense/FreedomLoader/pages/legal/terms.html</loc>
+  <lastmod>2025-11-20T10:30:58+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
